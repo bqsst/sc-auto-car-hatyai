@@ -5,9 +5,9 @@ const notiSchema = mongoose.Schema({
       type: String,
       require: true
    },
-   noti_status: {
-      type: Boolean,
+   noti_time: {
+      type: String,
    }
-})
+});
 
-module.exports = mongoose.model('notification', notiSchema); 
+module.exports = mongoose.model('notification', notiSchema);
