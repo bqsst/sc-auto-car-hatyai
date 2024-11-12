@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.main {
+    background-color: #19191A;
+}
+
+.custom-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.custom-arrow-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.next-arrow-1 {
+    right: -18px;
+    top: 36%;
+    transform: translateY(-50%);
+}
+
+.next-arrow-2 {
+    right: 3.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.next-arrow-3 {
+    right: -3.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.prev-arrow-1 {
+    left: -18px;
+    top: 36%;
+    transform: translateY(-50%);
+}
+
+.prev-arrow-2 {
+    left: 3.0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-arrow-3 {
+    left: -3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-arrow:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.custom-arrow-2:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.flex-center {
+    @apply flex items-center justify-center
+}
+
+.button {
+    background-color: #1D8DCC;
+}
+
+.button:hover {
+    background-color: #176d9f;
+}
+
+.bg-sky-1 {
+    background-color: #1D8DCC;
+}
+
+.bg-sky-2 {
+    background-color: #0d5781;
+}
+
+.text-sky-1 {
+    color: #1D8DCC;
+}
+
+.text-sky-2 {
+    color: #0d5781;
+}
+
+.car-image-slide-show {
+    @apply object-cover w-full h-full rounded-md
+}
+
+.car-details-container {
+    @apply flex justify-between py-4 border-b border-black
+}
+
+.reserve-date {
+    @apply flex items-center gap-3 px-4 py-2 border rounded-md hover:bg-gray-50 cursor-pointer
+}
+
+.react-datepicker {
+    @apply bg-white shadow-lg rounded-lg border border-gray-300;
+}
+
+.react-datepicker__header {
+    @apply bg-gray-100 border-b border-gray-300 rounded-t-lg;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+    @apply text-gray-700;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    @apply bg-blue-500 text-white rounded-full;
+}
+
+.react-datepicker__day:hover {
+    @apply bg-blue-200 text-blue-700 rounded-full;
+}
+
+.react-datepicker__current-month {
+    @apply text-lg font-semibold text-gray-800;
+}
+
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+    @apply hover:text-blue-600;
+}
+
+.slick-slide {
+    padding: 0 6px;
+}
