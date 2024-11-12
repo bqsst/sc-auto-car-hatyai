@@ -2,7 +2,6 @@ const Members = require('../models/member')
 const bcrypt = require('bcrypt')
 
 exports.login = async (req, res) => {
-
     const { mem_email, mem_pass } = req.body
 
     try {
@@ -23,7 +22,6 @@ exports.login = async (req, res) => {
 }
 
 exports.register = async (req, res) => {
-
     const { mem_email, mem_pass, mem_first_name, mem_last_name, mem_cid, mem_tol, mem_address } = req.body
 
     try {
