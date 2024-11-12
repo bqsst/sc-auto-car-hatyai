@@ -31,7 +31,7 @@ exports.cancel = async (req, res) => {
          return res.status(404).send('Reservation not found'); 
       }
 
-      res.status(200).send('Reservation canceled successfully');
+      res.status(200).send('Reservation canceled successfully!');
    } catch (err) {
       console.log(err);
       res.status(500).send('Server Error');
